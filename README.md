@@ -3,7 +3,7 @@
 ![Bolder Flight Systems Logo](img/logo-words_75.png) &nbsp; &nbsp; ![Arduino Logo](img/arduino_logo_75.png)
 
 # ArrayNumElem
-This library contains a function for computing the number of elements in a C-style array, which is useful for looping through the array. This library is compatible with Arduino ARM and with CMake build systems. It would also be easy to include with other projects, since it is a header only library.
+This library contains a function for computing the number of elements in a C-style array, which is useful for looping through the array. This library is compatible with Arduino and with CMake build systems. It would also be easy to include with other projects, since it is a header only library.
    * [License](LICENSE.md)
    * [Changelog](CHANGELOG.md)
    * [Contributing guide](CONTRIBUTING.md)
