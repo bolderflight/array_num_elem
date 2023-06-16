@@ -1,0 +1,30 @@
+stages:
+  - lint
+  - build
+  - test
+
+Lint:
+  stage: lint
+  tags:
+    - bfs
+  script: 
+    - cpplint --verbose=0 src/array_num_elem.h
+Compile:
+  stage: build
+  tags:
+    - bfs
+  script:
+    - mkdir build
+    - cd build
+    - cmake ..
+    - make
+  artifacts:
+    paths:
+      - build/array_num_elem_test
+
+Test Airdata:
+  stage: test
+  tags:
+    - bfs
+  script:
+    - ./build/array_num_elem_test
